@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validators</title>
+    <link rel="stylesheet" type="text/css" href="validationinbuilt.css">
+    <script type="text/javascript" src="validationinbuilt.js"></script>
+</head>
+<body>
+<div id="mydiv" class="forms">
+    <h3>Login Form</h3>
+    <p>
+        <label for='FirstName'>First Name*</label>
+        <input type="text" id="FirstName" name="FirstName">
+        <p class="paraerror" id="fname"></p>
+    </p>
+    <p>
+        <label for='LastName'>Last Name*</label>
+        <input type="text" id="LastName" name="LastName" >
+        <p class="paraerror" id="lname"></p>
+    </p>
+    <p>
+        <label for='EMail'>EMail*</label>
+        <input type="text" id="Email" name="EMail" >
+        <p class="paraerror" id="email"></p>
+    </p>
+    <p>
+        <label for='Phone'>Phone*</label>
+        <input type="text" id="Phone" name="Phone" >
+        <p class="paraerror" id="phone"></p>
+        <br>
+    </p>
+    <p>
+        <input type="button" name="submit" value="Submit" onclick="validate()">
+    </p>
+</div>
+</body>
+</html>

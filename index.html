@@ -1,0 +1,37 @@
+<html>
+<html>
+<head>
+	<title>Ajax Request</title>
+</head>
+<body>
+<div>
+	<h2>Hi i am Rahul..........!</h2>
+	<button onclick="fun()">Ajax OK</button>
+	<p id="data"></p>
+</div>
+<script type="text/javascript">
+	function fun()
+	{
+		var req = new XMLHttpRequest();
+		req.onreadystatechange = function()
+		 {
+	   		 if (this.readyState == 4 && this.status == 200)
+	   		  {
+	   		  	var a= req.responseText;
+	   		  	var b=JSON.parse(a); 
+	   		  	console.log(b);
+	   		  	var c =[];
+	   		  	console.log(b.options.length);
+	   		  	for (let i = 0; i <= b.options.length - 1; i++)
+	   		  	{
+	   		  		c.push(`<table><td>${b.options[i].label}</td></table> <br>`);
+	      		}
+	      		document.getElementById("data").innerHTML = c.join('');
+   		 }
+ 	 };
+ 	 req.open('GET','https://direct-prod-directportal.godigit.com/DirectPortal/international/travel/countries',true);
+	 req.send();
+	}
+</script>
+</body>
+</html>

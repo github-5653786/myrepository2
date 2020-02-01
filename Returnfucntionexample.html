@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Return function for a form</title>
+</head>
+
+<body>
+    <form onsubmit="return validate()" action="HoverableSideNavBar.html">
+        <label for="id">Enter your ID
+            <input type="text" id="id">
+        </label><br><br>
+        <label for="pass">Enter your Password
+            <input type="password" id="pass">
+        </label><br> <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
+<script>
+    function validate() {
+        a = document.getElementById("id");
+        b = document.getElementById("pass");
+        if (a.value == '' && b.value == '') {
+            alert("Invalid entry");
+            return false;
+        }else if(b.value!=123){
+            alert("Password mismatch");
+            return false;
+        }
+         else {
+            return true;
+        }
+    }
+</script>

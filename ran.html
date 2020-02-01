@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<title>Scroll back to top - Demo</title>
+
+</head>
+<style type="text/css">
+	body{
+		scroll-behavior: smooth;	
+	}
+	#container{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#back2Top {
+		width: 105px;
+		line-height: 40px;
+		cursor: pointer;
+		position: fixed;
+		bottom: 50px;
+		right: 40px;
+		background-color: #DDD;
+		color: #555;
+		text-align: center;
+		font-size: 16px;
+		text-decoration: none;
+	}
+
+	#back2Top:hover {
+		background-color: #DDF;
+		color: #000;
+	}
+	.navbar {
+	  overflow: hidden;
+	  background-color: #333;
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	}
+	.comman{
+		 background-color: yellow;
+	}
+	.navbar a {
+	  float: left;
+	  display: block;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+	.home{
+		background-color: red;
+		color: yellow
+	}
+</style>
+
+<body>
+	<div class="navbar">
+	  <a href="#home" id="home">Home</a>
+	  <a href="#news">News</a>
+	  <a href="#contact">Contact</a>
+	</div>
+	<div id="container">
+		<h1>Scroll down to reveal the arrow</h1>
+		<p>Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, cu case ceteros cum. Novum commodo malorum vix ut.
+			Dolores consequuntur in ius, sale electram dissentiunt quo te. Cu duo omnes invidunt, eos eu mucius
+			fabellas. Stet facilis ius te, quando voluptatibus eos in. Ad vix mundi alterum, integre urbanitas
+			intellegam vix in.</p>
+		<p>Eum facete intellegat ei, ut mazim melius usu. Has elit simul primis ne, regione minimum id cum. Sea deleniti
+			dissentiet ea. Illud mollis moderatius ut per, at qui ubique populo. Eum ad cibo legimus, vim ei quidam
+			fastidii.</p>
+		<p>Quo debet vivendo ex. Qui ut admodum senserit partiendo. Id adipiscing disputando eam, sea id magna pertinax
+			concludaturque. Ex ignota epicurei quo, his ex doctus delenit fabellas, erat timeam cotidieque sit in. Vel
+			eu soleat voluptatibus, cum cu exerci mediocritatem. Malis legere at per, has brute putant animal et, in
+			consul utamur usu.</p>
+		<p>Te has amet modo perfecto, te eum mucius conclusionemque, mel te erat deterruisset. Duo ceteros phaedrum id,
+			ornatus postulant in sea. His at autem inani volutpat. Tollit possit in pri, platonem persecuti ad vix, vel
+			nisl albucius gloriatur no.</p>
+		<p>Ea duo atqui incorrupte, sed rebum regione suscipit ex, mea ex dicant percipit referrentur. Dicat luptatum
+			constituam vix ut. His vide platonem omittantur id, vel quis vocent an. Ad pro inani zril omnesque. Mollis
+			forensibus sea an, vim habeo adipisci contentiones ad, tale autem graecis ne sit.</p>
+		<p>Ex quod meis per, ea paulo eirmod intellegam usu, eam te propriae fabellas. Nobis graecis has at, an eum
+			audire impetus. Ius epicuri verterem ex, qui cu solet feugiat consetetur. Placerat apeirian et sea, nec wisi
+			viderer definiebas ex, at eum oratio honestatis.</p>
+		<p>Eum illum nulla graeci at, mea quis munere indoctum at. In sea partiendo hendrerit. Quaestio partiendo an
+			eam, rebum vitae accumsan ius id. Duo at causae option.</p>
+		<p>At persius imperdiet vis, ea elit atqui aperiri mei, percipit maiestatis sea eu. Has et partem hendrerit, vim
+			cibo veniam aliquid an. No pri populo abhorreant, everti mandamus ne mea. Debitis forensibus suscipiantur
+			ius cu. Ei per possim verterem, et iudico voluptatum eos.</p>
+		<p>Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, cu case ceteros cum. Novum commodo malorum vix ut.
+			Dolores consequuntur in ius, sale electram dissentiunt quo te. Cu duo omnes invidunt, eos eu mucius
+			fabellas. Stet facilis ius te, quando voluptatibus eos in. Ad vix mundi alterum, integre urbanitas
+			intellegam vix in.</p>
+		<p>Eum facete intellegat ei, ut mazim melius usu. Has elit simul primis ne, regione minimum id cum. Sea deleniti
+			dissentiet ea. Illud mollis moderatius ut per, at qui ubique populo. Eum ad cibo legimus, vim ei quidam
+			fastidii.</p>
+		<p>Quo debet vivendo ex. Qui ut admodum senserit partiendo. Id adipiscing disputando eam, sea id magna pertinax
+			concludaturque. Ex ignota epicurei quo, his ex doctus delenit fabellas, erat timeam cotidieque sit in. Vel
+			eu soleat voluptatibus, cum cu exerci mediocritatem. Malis legere at per, has brute putant animal et, in
+			consul utamur usu.</p>
+		<p>Te has amet modo perfecto, te eum mucius conclusionemque, mel te erat deterruisset. Duo ceteros phaedrum id,
+			ornatus postulant in sea. His at autem inani volutpat. Tollit possit in pri, platonem persecuti ad vix, vel
+			nisl albucius gloriatur no.</p>
+		<p>Ea duo atqui incorrupte, sed rebum regione suscipit ex, mea ex dicant percipit referrentur. Dicat luptatum
+			constituam vix ut. His vide platonem omittantur id, vel quis vocent an. Ad pro inani zril omnesque. Mollis
+			forensibus sea an, vim habeo adipisci contentiones ad, tale autem graecis ne sit.</p>
+		<p>Ex quod meis per, ea paulo eirmod intellegam usu, eam te propriae fabellas. Nobis graecis has at, an eum
+			audire impetus. Ius epicuri verterem ex, qui cu solet feugiat consetetur. Placerat apeirian et sea, nec wisi
+			viderer definiebas ex, at eum oratio honestatis.</p>
+		<p>Eum illum nulla graeci at, mea quis munere indoctum at. In sea partiendo hendrerit. Quaestio partiendo an
+			eam, rebum vitae accumsan ius id. Duo at causae option.</p>
+		<p>At persius imperdiet vis, ea elit atqui aperiri mei, percipit maiestatis sea eu. Has et partem hendrerit, vim
+			cibo veniam aliquid an. No pri populo abhorreant, everti mandamus ne mea. Debitis forensibus suscipiantur
+			ius cu. Ei per possim verterem, et iudico voluptatum eos.</p>
+		<p>Te mel meis adhuc. Choro percipit mei eu, fabulas fuisset tibique ad sea, cu eos sint falli iracundia. Usu ex
+			minimum corrumpit, postea dolores salutandi ne est, cu nam option recusabo reprehendunt. Prima vocibus
+			argumentum ex usu. Nam te legere salutatus dissentiunt, his ei principes prodesset, est possit blandit ex.
+		</p>
+		<p>Pro no rebum timeam necessitatibus, et mnesarchum quaerendum has. Duo molestie interesset at. Vel ad legere
+			populo. Sed ne saepe doming perpetua. Omnis iuvaret volumus an duo, qui duis audiam fabellas in.</p>
+		<p>MUSTAFA Has in erant eruditi vituperatoribus, facer copiosae nam ex. Ne quo error rationibus, cum ea accusam
+			comprehensam. Quo no nihil rationibus intellegam. Duo ea justo deleniti tincidunt, per et erant volumus
+			consequat, per simul consulatu ne. Efficiendi contentiones mel id, ad quaeque facilis vel. Ius mutat nullam
+			ut, dolores officiis platonem qui ex.</p>
+		<p>Et cum quem movet nonumes, at molestie mandamus intellegebat eum, at habeo vulputate vel. An nec diam
+			consequuntur, quo an diam numquam theophrastus. Et unum possit sit. Suas ludus sea an. Quo expetendis
+			consetetur an, no perpetua consequuntur cum. Congue tritani delenit eam an. Porro albucius id mei, ut
+			fabellas scripserit interesset vis.</p>
+		<p>Eos causae albucius deseruisse ea, mel augue eirmod convenire no. Ad volutpat consulatu definiebas sea, nec
+			integre scribentur ei. Principes mnesarchum mea ei, dicam laboramus abhorreant an has. Mutat iuvaret pri ea,
+			id quo reque libris deseruisse. Ut aeterno denique minimum duo, indoctum reformidans id pro.</p>
+		<p>Alii dissentias eu eum, ei vix exerci laudem placerat. Ius at sonet saepe theophrastus, atqui qualisque
+			urbanitas no sit, aperiam vulputate sadipscing te eam. An dolor mediocrem patrioque qui, his propriae
+			laboramus scripserit in, ne ubique tamquam has. Tempor aperiri nominati vis eu. At recteque gloriatur eum,
+			viris referrentur sit ut, et tota solum pri.</p>
+		<p>Quidam lobortis intellegat ea mel. Aeterno facilis mea ne. Omittam periculis no eos, duo cu sale autem ullum,
+			legere tritani ut eos. In vix adhuc facer. Nec erat commodo efficiendi eu. Et nusquam lucilius splendide
+			pro, at nostro constituam appellantur sea.</p>
+		<p>Ei iriure fastidii sea, vim ut vivendum pertinacia. Cu dolor perpetua his, debet doctus definitiones an sit.
+			Velit ridens propriae in vix. Qui ut justo essent lucilius, no choro doming pro.</p>
+		<p>Est in eros contentiones, te dicit explicari tincidunt duo. No duo vocent perpetua salutatus, his ut essent
+			placerat. Cu error argumentum sea. In sed eirmod veritus, te mundi utamur per. Ne sit case inani tollit, ea
+			mel autem partiendo. Eum solum animal alterum ei. Sea quem oportere eu.</p>
+		<p>At ius ipsum prodesset. Pro menandri evertitur constituam ut, in elit porro repudiare usu, nusquam praesent
+			comprehensam est te. Autem mnesarchum nam te. Libris qualisque nam an. Ei nam diam putant facilis. Quis
+			deleniti no vel, liber perfecto ei cum, vim ea inermis imperdiet.</p>
+		<p>Id vide albucius lobortis pri. Mel saperet habemus scriptorem eu, harum pertinax euripidis vel ne. Dolor
+			accumsan reprimique sit an. Ad veri vitae fuisset cum, nostrum gloriatur vix id. Perfecto voluptatum at mel,
+			te ius dicant vituperatoribus.</p>
+		<p>Sed ne appellantur ullamcorper. Dicant persius quaestio et per, assum tritani omittantur vix no, vix suas
+			aliquip ut. Per meis rationibus ut, eum ut delicata laboramus. An vix brute eruditi ocurreret, ex nec animal
+			omnesque assentior, voluptatibus conclusionemque usu ne. Quo perpetua argumentum referrentur ei, cum idque
+			phaedrum at. Quodsi instructior voluptatibus pri ex. Nec munere ornatus ut, mediocrem partiendo eu nam.</p>
+		<p id="p"> ipsum dolor sit amet, consectetur adipisicing elit. Officia minus sunt, necessitatibus iste in velit
+			neque distinctio voluptatem numquam laudantium doloribus eaque incidunt eligendi, dolores veniam deleniti,
+			quisquam quia voluptates nesciunt? Dicta doloremque accusamus facere! Non id voluptates tempore corporis
+			laborum repellat, quod dolorum doloremque repudiandae quis? Neque impedit voluptas laborum ipsa. Molestiae
+			iure assumenda molestias, enim sed rerum accusantium consequatur aspernatur laborum tenetur pariatur rem
+			beatae numquam, ducimus repudiandae nisi deleniti aliquam ipsum asperiores accusamus. Veniam voluptatibus
+			earum labore et fuga temporibus quasi quas, provident praesentium ipsam voluptates asperiores ullam vitae
+			molestias ex, inventore suscipit dolore laudantium impedit nobis eius! Quasi enim ipsa excepturi voluptates,
+			vero fugit. Magni veniam ipsam quo rem, inventore, debitis corrupti ex modi ducimus dignissimos quisquam
+			maxime sint vitae omnis? Voluptatum atque porro earum excepturi dignissimos provident velit, ad, nihil
+			temporibus ullam consequatur eaque quaerat sint, officia optio vitae ut. Sapiente inventore repudiandae
+			illum quisquam magnam minima ratione expedita voluptas consequuntur, eaque aut ea distinctio impedit
+			praesentium magni laboriosam, suscipit explicabo sunt? Maiores repudiandae, dicta ab saepe rerum dolorem
+			aperiam consequuntur laboriosam maxime quos. Delectus eligendi perspiciatis eaque quam possimus libero eos
+			architecto, deleniti similique magni facilis? Aliquam consectetur accusamus qui iste obcaecati repudiandae
+			at.</p>
+	</div>
+
+	<a id="back2Top" title="Back to top" href="#">Back To Top</a>
+
+
+	<script type="text/javascript">
+		// $(window).scroll(function() {
+		//     var height = $(window).scrollTop();
+		//     if (height > 100) {
+		//         $('#back2Top').fadeIn();
+		//     } else {
+		//         $('#back2Top').fadeOut();
+		//     }
+		// });
+		// $(document).ready(function() {
+		//     $("#back2Top").click(function(event) {
+		//         event.preventDefault();
+		//         $("html, body").animate({ scrollTop: 0 }, "slow");
+		//         return false;
+		//     });
+		// });
+
+
+		//to hide and show backtotop icon on scroll
+		window.onscroll = function () {
+			var prev = window.pageYOffset;
+			var cur=window.pageYOffset;
+			console.log(prev);
+			if(prev>=1000){
+				document.getElementById('home').className = "home";
+			}else{
+				document.getElementById('home').className = "comman";
+			}
+			if (prev >= 500) {
+				document.getElementById("back2Top").style.visibility = "hidden";
+			}
+			else {
+				document.getElementById("back2Top").style.visibility = "visible";
+			}
+			prev=cur;
+		}  
+	</script>
+
+</body>
+
+</html>
